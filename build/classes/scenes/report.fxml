@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="csr.ReportController">
+   <children>
+      <TableView fx:id="reportTable" layoutX="116.0" layoutY="46.0" prefHeight="317.0" prefWidth="456.0" AnchorPane.bottomAnchor="37.0" AnchorPane.leftAnchor="116.0" AnchorPane.rightAnchor="28.0" AnchorPane.topAnchor="46.0">
+        <columns>
+          <TableColumn fx:id="productCode" prefWidth="111.0" text="ProductCode" />
+          <TableColumn fx:id="customerID" prefWidth="83.0" text="CustomerID" />
+            <TableColumn fx:id="customerName" prefWidth="96.0" text="CustomerName" />
+            <TableColumn fx:id="sellingPrice" prefWidth="93.0" text="SellingPrice" />
+            <TableColumn fx:id="profit" minWidth="0.0" prefWidth="71.0" text="Profit" />
+            <TableColumn fx:id="loss" prefWidth="64.0" text="Loss" />
+            <TableColumn fx:id="sellingDate" prefWidth="71.0" text="SellingDate" />
+        </columns>
+      </TableView>
+      <Label layoutX="116.0" layoutY="14.0" text="Report" textFill="#198ed1">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

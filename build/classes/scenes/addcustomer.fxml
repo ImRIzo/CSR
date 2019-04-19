@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 15;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csr.AddcustomerController">
+   <children>
+      <JFXButton layoutX="223.0" layoutY="262.0" onAction="#addCustomer" style="-fx-background-color: #1DA1F2;" text="Add Customer">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Text layoutX="103.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="eMail">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="25.0" fitWidth="29.0" layoutX="68.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/telephone-of-old-design.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="29.0" layoutX="68.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/close-envelope.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="29.0" layoutX="68.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/user-name.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="29.0" layoutX="68.0" layoutY="169.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/home-address.png" />
+         </image>
+      </ImageView>
+
+      <Text layoutX="103.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="103.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="103.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="address" layoutX="221.0" layoutY="161.0" prefHeight="25.0" prefWidth="120.0" />
+      <JFXTextField fx:id="phone" layoutX="221.0" layoutY="120.0" prefHeight="25.0" prefWidth="120.0" />
+      <JFXTextField fx:id="name" layoutX="221.0" layoutY="79.0" prefHeight="25.0" prefWidth="120.0" />
+      <JFXTextField fx:id="email" layoutX="221.0" layoutY="200.0" prefHeight="25.0" prefWidth="120.0" />
+      <ImageView fitHeight="186.0" fitWidth="250.0" layoutX="345.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Information-Processing1.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="csr.EmplouyeelistController">
+   <children>
+      <TableView fx:id="employeeListTable" layoutX="146.0" layoutY="80.0" prefHeight="242.0" prefWidth="305.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="name" prefWidth="75.0" text="Name" />
+            <TableColumn fx:id="phone" prefWidth="75.0" text="Phone" />
+            <TableColumn fx:id="vrole" prefWidth="75.0" text="Role" />
+        </columns>
+      </TableView>
+      <Label layoutX="147.0" layoutY="45.0" text="Employee List">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="removeEmployee" layoutX="239.0" layoutY="327.0" onAction="#RemoveEmployee" style="-fx-background-color: #1DA1F2;" text="Remove Employee">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>
