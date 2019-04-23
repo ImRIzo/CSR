@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="mainpain" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="637.0" prefWidth="943.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csr.HomeController">
+   <center>
+      <VBox prefHeight="567.0" prefWidth="800.0" BorderPane.alignment="CENTER" />
+   </center>
+   <left>
+      <VBox prefHeight="473.0" prefWidth="199.0" style="-fx-background-color: #1DA1F2;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="70.0" prefWidth="143.0">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <children>
+                  <Text fill="#f8f8f8" strokeType="OUTSIDE" strokeWidth="0.0" text="CSRM" textAlignment="CENTER" wrappingWidth="181.83203125">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="20.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox id="addCustomer" layoutX="10.0" layoutY="100.0" prefHeight="79.0">
+               <children>
+                  <JFXButton id="addCustomerB" onAction="#showDashboard" prefHeight="65.0" prefWidth="191.0" style="-fx-background-color: #1C99E7; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: white;" text="Dashboard" textFill="#fffafa">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <Glow />
+                     </effect>
+                     <font>
+                        <Font name="Lao UI" size="20.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="31.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/dashboard.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </HBox>
+            <HBox id="addCustomer" prefHeight="79.0">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+               <children>
+                  <JFXButton id="addCustomerB" onAction="#addCustomer" prefHeight="56.0" prefWidth="192.0" style="-fx-background-color: #1C99E7; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: white;" text="Add Customer" textFill="#fffafa">
+                     <font>
+                        <Font name="Lao UI" size="20.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <Glow />
+                     </effect>
+                     <graphic>
+                        <ImageView fitHeight="26.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/add.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </HBox>
+            <HBox id="customerList" layoutX="10.0" layoutY="100.0" prefHeight="79.0">
+               <children>
+                  <JFXButton id="customerListB" onAction="#showCustomerList" prefHeight="56.0" prefWidth="192.0" style="-fx-background-color: #1C99E7; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: white;" text="Customer List" textFill="#fffafa">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <Glow />
+                     </effect>
+                     <font>
+                        <Font name="Lao UI" size="20.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/customer.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </HBox>
+            <HBox id="productList" layoutX="10.0" layoutY="179.0" prefHeight="79.0">
+               <children>
+                  <JFXButton id="productListB" onAction="#showProductList" prefHeight="56.0" prefWidth="191.0" style="-fx-background-color: #1C99E7; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: white;" text="Products" textFill="#fffafa">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <Glow />
+                     </effect>
+                     <font>
+                        <Font name="Lao UI" size="20.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/productlist.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </HBox>
+            <HBox fx:id="addProduct" layoutX="10.0" layoutY="258.0" prefHeight="79.0">
+               <children>
+                  <JFXButton id="addProductB" onAction="#addProduct" prefHeight="56.0" prefWidth="191.0" style="-fx-background-color: #1C99E7; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: white;" text="Add Product" textFill="#fffafa">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <Glow />
+                     </effect>
+                     <font>
+                        <Font name="Lao UI" size="20.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="35.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/add.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </HBox>
+            <HBox id="addProduct" layoutX="10.0" layoutY="416.0" prefHeight="79.0" prefWidth="165.0">
+               <children>
+                  <JFXButton id="addProductB" onAction="#logout" prefHeight="56.0" prefWidth="191.0" style="-fx-background-color: #1C99E7; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: white;" text="LogOut" textFill="#fffafa">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <Glow />
+                     </effect>
+                     <font>
+                        <Font name="Lao UI" size="20.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="35.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/logout.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+   </left>
+   <top>
+      <HBox prefHeight="46.0" prefWidth="943.0" style="-fx-background-color: #1DA1F2;" BorderPane.alignment="CENTER">
+         <children>
+            <MenuBar style="-fx-background-color: #1DA1F2; -fx-border-color: white; -fx-border-radius: 10;">
+              <menus>
+                <Menu mnemonicParsing="false" style="-fx-background-color: #1DA1F2;" text="More">
+                  <items>
+                    <MenuItem fx:id="addemployee" mnemonicParsing="false" onAction="#showAddEmployee" text="Add Employee" />
+                        <MenuItem mnemonicParsing="false" onAction="#showEmployeeList" text="Employee List" />
+                        <MenuItem mnemonicParsing="false" onAction="#showReport" text="Report" />
+                        <MenuItem mnemonicParsing="false" onAction="#showAbout" text="About CSR" />
+                  </items>
+                </Menu>
+              </menus>
+               <HBox.margin>
+                  <Insets left="10.0" top="10.0" />
+               </HBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </MenuBar>
+            <Label fx:id="wName" text="Welcome " textAlignment="CENTER">
+               <font>
+                  <Font name="Bookman Old Style" size="34.0" />
+               </font>
+               <padding>
+                  <Insets left="240.0" />
+               </padding>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+</BorderPane>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 15;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csr.AddproductController">
+   <children>
+      <JFXButton layoutX="222.0" layoutY="304.0" onAction="#addproduct" prefHeight="31.0" prefWidth="97.0" style="-fx-background-color: #1DA1F2;" text="Add Car">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <Text layoutX="103.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HP">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="25.0" fitWidth="29.0" layoutX="68.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/car-model.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="29.0" layoutX="68.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/horse_power.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="29.0" layoutX="68.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/brand.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="29.0" layoutX="68.0" layoutY="169.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/calendar.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="103.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Year">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="103.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Model">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="103.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Brand">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="brandName" layoutX="221.0" layoutY="79.0" prefHeight="25.0" prefWidth="120.0" />
+      <ImageView fitHeight="25.0" fitWidth="29.0" layoutX="68.0" layoutY="256.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/price.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="productPrice" layoutX="221.0" layoutY="246.0" prefHeight="25.0" prefWidth="120.0" />
+      <Text layoutX="103.0" layoutY="273.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="180.0" fitWidth="237.0" layoutX="348.0" layoutY="101.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/car-animation.gif" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="modelNumber" layoutX="221.0" layoutY="122.0" prefHeight="25.0" prefWidth="120.0" />
+      <JFXTextField fx:id="horsePower" layoutX="222.0" layoutY="204.0" prefHeight="25.0" prefWidth="120.0" />
+      <DatePicker fx:id="modelYear" layoutX="222.0" layoutY="170.0" prefHeight="25.0" prefWidth="120.0" />
+      <Text layoutX="342.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$USD" />
+      <ImageView fitHeight="25.0" fitWidth="29.0" layoutX="68.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/id.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="102.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product ID">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="productID" layoutX="221.0" layoutY="38.0" prefHeight="25.0" prefWidth="120.0" />
+   </children>
+</AnchorPane>

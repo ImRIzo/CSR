@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #1DA1F2;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csr.LoginController">
+   <children>
+      <ImageView fitHeight="275.0" fitWidth="308.0" layoutX="35.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/cs.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="username" alignment="TOP_LEFT" layoutX="393.0" layoutY="107.0" prefHeight="25.0" prefWidth="255.0" promptText="Username">
+         <font>
+            <Font name="Goudy Old Style" size="21.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="password" alignment="TOP_LEFT" layoutX="393.0" layoutY="202.0" prefHeight="25.0" prefWidth="255.0" promptText="Password">
+         <font>
+            <Font name="Goudy Old Style" size="21.0" />
+         </font>
+      </JFXPasswordField>
+      <Label layoutX="189.0" layoutY="15.0" text="Customer Service Record Module" textFill="#02fceb">
+         <font>
+            <Font name="Goudy Old Style Bold" size="25.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="29.0" fitWidth="29.0" layoutX="346.0" layoutY="212.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/password.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="29.0" fitWidth="32.0" layoutX="346.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/user.png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="393.0" layoutY="284.0" onAction="#loginAction" defaultButton="true" prefHeight="25.0" prefWidth="255.0" style="-fx-background-color: #4BACD2; -fx-background-radius: 20;" text="Login">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

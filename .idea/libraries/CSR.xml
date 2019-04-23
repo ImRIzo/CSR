@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="CSR">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/CSR.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
